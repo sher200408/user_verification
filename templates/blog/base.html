@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%} {% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div id="content">
+      {% block content %}
+
+      {% endblock %}
+  </div>
+
+  <div id="sidebar">
+
+    <h2>It Gandonlar </h2>
+    <p>Informatsion texnolgiya oid yangiliklar </p>
+
+  </div>
+</body>
+</html>
